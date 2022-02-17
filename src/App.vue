@@ -1,11 +1,10 @@
 <template>
-  <h1>Bonjour <span v-html="name"></span></h1>
-  <!-- Remarquez la différence avec v-text : -->
-  <div>{{ name }}</div>
+  <h1 :class="h1Title" :id="h1id">Bonjour monde !</h1>
 </template>
 
 <script setup lang="ts">
-const name = '<i>Jean</i>';
+const h1Title = 'uneClasse';
+const h1id = 'unId';
 </script>
 
 <style></style>
